@@ -23,7 +23,7 @@
 </head>
 
 
-<body class="fixed-left">
+<body class="fixed-left" onload=authCheckAdmin()>
 
     <!-- Loader -->
     <div id="preloader">
@@ -44,8 +44,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="index-2.html" class="logo"><i class="mdi mdi-assistant"></i> Annex</a>
-                    <!-- <a href="index.html" class="logo"><img src="assets/images/logo.png" height="24" alt="logo"></a> -->
+                    <!--  <a href="index-2.html" class="logo"><i class="mdi mdi-assistant"></i> Annex</a> -->
+                    <a href="index.html" class="logo"><img src="assets/images/logo.png" height="24" alt="logo"></a>
                 </div>
             </div>
 
@@ -56,28 +56,90 @@
                         <li class="menu-title">Main</li>
 
                         <li>
-                            <a href="index-2.html" class="waves-effect">
-                                <i class="mdi mdi-airplay"></i>
-                                <span> Dashboard <span class="badge badge-pill badge-primary float-right">7</span></span>
+                            <a href="index.html" class="waves-effect">
+                                <i class="fa fa-home"></i>
+                                <span> Dashboard </span>
                             </a>
                         </li>
 
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span> Advanced UI </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="advanced-highlight.html">Highlight</a></li>
-                                <li><a href="advanced-rating.html">Rating</a></li>
-                                <li><a href="advanced-alertify.html">Alertify</a></li>
-                                <li><a href="advanced-rangeslider.html">Range Slider</a></li>
-                            </ul>
+
+
+
+                        <li class="menu-title">Stock Management</li>
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="fa fa-th"></i>
+                                <span> Update stock </span>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="calendar.html" class="waves-effect"><i class="mdi mdi-calendar-clock"></i><span> Calendar </span></a>
+                            <a href="#" class="waves-effect">
+                                <i class="ion-ios7-football-outline"></i>
+                                <span> Product categories </span>
+                            </a>
                         </li>
 
-                        <li class="menu-title">Components</li>
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="mdi mdi-chart-line"></i>
+                                <span> Stock report </span>
+                            </a>
+                        </li>
 
+
+
+                        <li class="menu-title">Receipts and Vouchers</li>
+                        <li>
+                            <a href="#.html" class="waves-effect">
+                                <i class="ion-document"></i>
+                                <span> Receipts</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="calendar.html" class="waves-effect">
+                                <i class="mdi mdi-file-document-box"></i>
+                                <span> Vouchers </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calendar.html" class="waves-effect">
+                                <i class="mdi mdi-chart-bar"></i>
+                                <span> Report </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Website Mangement</li>
+                        <li>
+                            <a href="#.html" class="waves-effect">
+                                <i class="fa fa-trophy"></i>
+                                <span> Achievements </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="calendar.html" class="waves-effect">
+                                <i class="mdi mdi-calendar-clock"></i>
+                                <span> Events </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calendar.html" class="waves-effect">
+                                <i class="fa fa-file-photo-o"></i>
+                                <span> Photos </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calendar.html" class="waves-effect">
+                                <i class="fa fa-group"></i>
+                                <span> Alumni </span>
+                            </a>
+                        </li>
+
+
+
+                        <!--
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-bullseye"></i> <span> UI Elements </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
@@ -100,80 +162,11 @@
                                 <li><a href="ui-sweet-alert.html">Sweet-Alert</a></li>
                                 <li><a href="ui-grid.html">Grid</a></li>
                             </ul>
+
                         </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-outline"></i><span> Forms </span> <span class="badge badge-pill badge-info float-right">8</span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="form-elements.html">Form Elements</a></li>
-                                <li><a href="form-validation.html">Form Validation</a></li>
-                                <li><a href="form-advanced.html">Form Advanced</a></li>
-                                <li><a href="form-editors.html">Form Editors</a></li>
-                                <li><a href="form-uploads.html">Form File Upload</a></li>
-                                <li><a href="form-mask.html">Form Mask</a></li>
-                                <li><a href="form-summernote.html">Summernote</a></li>
-                                <li><a href="form-xeditable.html">Form Xeditable</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-gauge"></i><span> Charts </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="charts-morris.html">Morris Chart</a></li>
-                                <li><a href="charts-chartist.html">Chartist Chart</a></li>
-                                <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
-                                <li><a href="charts-flot.html">Flot Chart</a></li>
-                                <li><a href="charts-c3.html">C3 Chart</a></li>
-                                <li><a href="charts-other.html">Jquery Knob Chart</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cards-outline"></i> <span> Icons </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="icons-material.html">Material Design</a></li>
-                                <li><a href="icons-ion.html">Ion Icons</a></li>
-                                <li><a href="icons-fontawesome.html">Font Awesome</a></li>
-                                <li><a href="icons-themify.html">Themify Icons</a></li>
-                                <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                <li><a href="icons-typicons.html">Typicons Icons</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-table"></i><span> Tables </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="tables-basic.html">Basic Tables</a></li>
-                                <li><a href="tables-datatable.html">Data Table</a></li>
-                                <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                <li><a href="tables-editable.html">Editable Table</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-title">Extra</li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-map-marker-multiple"></i><span> Maps </span> <span class="badge badge-pill badge-danger float-right">2</span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="maps-google.html"> Google Map</a></li>
-                                <li><a href="maps-vector.html"> Vector Map</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-google-pages"></i><span> Pages </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="pages-login.html">Login</a></li>
-                                <li><a href="pages-register.html">Register</a></li>
-                                <li><a href="pages-recoverpw.html">Recover Password</a></li>
-                                <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-                                <li><a href="pages-blank.html">Blank Page</a></li>
-                                <li><a href="pages-404.html">Error 404</a></li>
-                                <li><a href="pages-500.html">Error 500</a></li>
-                            </ul>
-                        </li>
-
+                        -->
                     </ul>
+
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -293,7 +286,7 @@
                                     <a class="dropdown-item" href="#"><span class="badge badge-success float-right">5</span><i class="mdi mdi-settings m-r-5 text-muted"></i> Settings</a>
                                     <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Lock screen</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    <a class="dropdown-item" onclick=logout()><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                                 </div>
                             </li>
 
@@ -353,8 +346,8 @@
                                             </div>
                                             <div class="col-6 align-self-center text-center">
                                                 <div class="m-l-10">
-                                                    <h5 class="mt-0 round-inner">$18090</h5>
-                                                    <p class="mb-0 text-muted">Visits Today</p>
+                                                    <h5 class="mt-0 round-inner"></h5>
+                                                    <p class="mb-0 text-muted"></p>
                                                 </div>
                                             </div>
                                             <div class="col-3 align-self-end align-self-center">
@@ -377,8 +370,8 @@
                                             </div>
                                             <div class="col-6 text-center align-self-center">
                                                 <div class="m-l-10 ">
-                                                    <h5 class="mt-0 round-inner">562</h5>
-                                                    <p class="mb-0 text-muted">New Users</p>
+                                                    <h5 class="mt-0 round-inner"></h5>
+                                                    <p class="mb-0 text-muted"></p>
                                                 </div>
                                             </div>
                                             <div class="col-3 align-self-end align-self-center">
@@ -401,8 +394,8 @@
                                             </div>
                                             <div class="col-6 align-self-center text-center">
                                                 <div class="m-l-10 ">
-                                                    <h5 class="mt-0 round-inner">7514</h5>
-                                                    <p class="mb-0 text-muted">New Orders</p>
+                                                    <h5 class="mt-0 round-inner"></h5>
+                                                    <p class="mb-0 text-muted"></p>
                                                 </div>
                                             </div>
                                             <div class="col-3 align-self-end align-self-center">
@@ -425,8 +418,8 @@
                                             </div>
                                             <div class="col-6 align-self-center text-center">
                                                 <div class="m-l-10">
-                                                    <h5 class="mt-0 round-inner">$32874</h5>
-                                                    <p class="mb-0 text-muted">Total Sales</p>
+                                                    <h5 class="mt-0 round-inner"></h5>
+                                                    <p class="mb-0 text-muted"></p>
                                                 </div>
                                             </div>
                                             <div class="col-3 align-self-end align-self-center">
@@ -438,6 +431,7 @@
                             </div>
                             <!-- Column -->
                         </div>
+                        <!--
                         <div class="row">
                             <div class="col-md-12 col-lg-12 col-xl-8">
                                 <div class="card m-b-30">
@@ -476,7 +470,7 @@
                                 <div class="card bg-info m-b-30">
                                     <div class="card-body">
                                         <div id="verticalCarousel" class="carousel slide vertical" data-ride="carousel">
-                                            <!-- Carousel items -->
+                                           
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                     <div class="row d-flex justify-content-center text-center">
@@ -512,7 +506,7 @@
                                 <div class="card bg-primary ">
                                     <div class="card-body">
                                         <div id="verticalCarousel2" class="carousel slide" data-ride="carousel">
-                                            <!-- Carousel items -->
+                                          
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                     <div class="row d-flex justify-content-center">
@@ -582,7 +576,7 @@
                                                         <p class="text-white font-12">15km/h - 37%</p>
                                                     </div>
                                                 </div>
-                                                <!-- End row -->
+                                                
                                             </div>
                                             <div class="col-6 align-self-center">
                                                 <div class="row">
@@ -597,10 +591,10 @@
                                                         <h6 class="text-white font-14">32°<i class="wi-degrees"></i></h6>
                                                     </div>
                                                 </div>
-                                                <!-- end row -->
+                                              
                                             </div>
                                         </div>
-                                        <!-- end row -->
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -861,84 +855,87 @@
                             </div>
                         </div>
                     </div>
-                    <!-- container -->
+                    -->
 
+
+                    </div>
+                    <!-- Page content Wrapper -->
 
                 </div>
-                <!-- Page content Wrapper -->
+                <!-- content -->
+
+                <!-- <footer class="footer">
+                    © 2018 Annex by Mannatthemes.
+                </footer> -->
 
             </div>
-            <!-- content -->
-
-            <footer class="footer">
-                © 2018 Annex by Mannatthemes.
-            </footer>
+            <!-- End Right content here -->
 
         </div>
-        <!-- End Right content here -->
-
-    </div>
-    <!-- END wrapper -->
+        <!-- END wrapper -->
 
 
-    <!-- jQuery  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/modernizr.min.js"></script>
-    <script src="assets/js/detect.js"></script>
-    <script src="assets/js/fastclick.js"></script>
-    <script src="assets/js/jquery.slimscroll.js"></script>
-    <script src="assets/js/jquery.blockUI.js"></script>
-    <script src="assets/js/waves.js"></script>
-    <script src="assets/js/jquery.nicescroll.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
 
-    <script src="assets/plugins/skycons/skycons.min.js"></script>
-    <script src="assets/plugins/raphael/raphael-min.js"></script>
-    <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/skycons/skycons.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+        <script src="assets/plugins/morris/morris.min.js"></script>
 
-    <script src="assets/pages/dashborad.js"></script>
+        <script src="assets/pages/dashborad.js"></script>
 
-    <!-- App js -->
-    <script src="assets/js/app.js"></script>
-    <script>
-        /* BEGIN SVG WEATHER ICON */
-        if (typeof Skycons !== 'undefined') {
-            var icons = new Skycons({
-                    "color": "#fff"
-                }, {
-                    "resizeClear": true
-                }),
-                list = [
-                    "clear-day", "clear-night", "partly-cloudy-day",
-                    "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
-                    "fog"
-                ],
-                i;
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
 
-            for (i = list.length; i--;)
-                icons.set(list[i], list[i]);
-            icons.play();
-        };
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/baseScript.js"></script>
+        <script>
+            /* BEGIN SVG WEATHER ICON */
+            if (typeof Skycons !== 'undefined') {
+                var icons = new Skycons({
+                        "color": "#fff"
+                    }, {
+                        "resizeClear": true
+                    }),
+                    list = [
+                        "clear-day", "clear-night", "partly-cloudy-day",
+                        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                        "fog"
+                    ],
+                    i;
 
-        // scroll
+                for (i = list.length; i--;)
+                    icons.set(list[i], list[i]);
+                icons.play();
+            };
 
-        $(document).ready(function() {
+            // scroll
 
-            $("#boxscroll").niceScroll({
-                cursorborder: "",
-                cursorcolor: "#cecece",
-                boxzoom: true
+            $(document).ready(function() {
+
+                $("#boxscroll").niceScroll({
+                    cursorborder: "",
+                    cursorcolor: "#cecece",
+                    boxzoom: true
+                });
+                $("#boxscroll2").niceScroll({
+                    cursorborder: "",
+                    cursorcolor: "#cecece",
+                    boxzoom: true
+                });
+
             });
-            $("#boxscroll2").niceScroll({
-                cursorborder: "",
-                cursorcolor: "#cecece",
-                boxzoom: true
-            });
-
-        });
-    </script>
+        </script>
 
 </body>
 
